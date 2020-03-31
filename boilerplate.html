@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Starter Page / Boilerplate | Royal Canin Design Language</title>
+  <meta name="robots" content="noindex">
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+  <meta charset="utf-8" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <meta name="description"
+    content="This is an example of a meta description. This will often show up in search results. Please fill this with relevant information">
+  <link id="royal-canin" rel="stylesheet" type='text/css'
+    href="https://d1a19ys8w1wkc1.cloudfront.net/royal-canin.styles.prefix.min.css?v=8-7-8" />
+  <script type="text/javascript" src="https://d1a19ys8w1wkc1.cloudfront.net/royal-canin.min.bundle.js?v=8-7-8"></script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NCWZQ3');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body class="rc-bg-colour--brand4 rc-template">
+
+  <!-- Header bar -->
+  <header class="rc-header" data-js-header-scroll>
+    <nav class="rc-header__nav rc-header__nav--primary">
+      <ul class="rc-list rc-list--blank rc-list--inline rc-list--align" role="menubar">
+        <li class="rc-list__item">
+          <button class="rc-btn rc-btn--icon-label rc-icon rc-menu--xs rc-iconography rc-md-up"
+            data-modal-trigger="main-nav-modal" aria-label="Menu">Menu</button>
+          <button class="rc-btn rc-btn--icon rc-icon rc-menu--xs rc-iconography rc-md-down"
+            data-js-trigger="mobile-push-nav" aria-label="Menu">
+            <span class="rc-screen-reader-text">Menu</span>
+          </button>
+        </li>
+      </ul>
+
+      <a href="/" class="rc-header__brand">
+        <span class="rc-screen-reader-text">Royal Canin Logo</span>
+        <object id="header__logo" class="rc-header__logo" type="image/svg+xml"
+          data="https://d1a19ys8w1wkc1.cloudfront.net/logo--animated.svg?v=8-7-8" data-js-import-interactive-svg>
+          <img alt="Royal Canin logo" height="100" src="https://d1a19ys8w1wkc1.cloudfront.net/1x1.gif?v=8-7-8"
+            style="background-image: url(https://d1a19ys8w1wkc1.cloudfront.net/logo--animated.png?v=8-7-8)" width="135">
+        </object>
+      </a>
+
+      <ul class="rc-list rc-list--blank rc-list--inline rc-list--align rc-header__right" role="menubar">
+        <li class="rc-list__item">
+          <button data-js-trigger="search-bar" class="rc-btn rc-btn--icon rc-icon rc-search--xs rc-iconography"
+            aria-label="Search">
+            <span class="rc-screen-reader-text">Search</span>
+          </button>
+        </li>
+      </ul>
+
+      <form class="rc-header__search-bar rc-hidden" data-js-target="search-bar" autocomplete="off">
+        <button class="rc-btn rc-btn--icon rc-icon rc-search--xs rc-iconography rc-stick-left rc-vertical-align"
+          type="submit" aria-label="Search">
+          <span class="rc-screen-reader-text">Search</span>
+        </button>
+        <input data-js-autocomplete class="rc-header__input" placeholder="Start typing to search" id="header-search"
+          type="search" value="" />
+        <label for="header-search">
+          <span class="rc-screen-reader-text">Start typing to search</span>
+        </label>
+        <button data-js-trigger="search-bar"
+          class="rc-btn rc-btn--icon rc-icon rc-close--xs rc-iconography rc-stick-right rc-vertical-align" type="button"
+          aria-label="Close">
+          <span class="rc-screen-reader-text">Close</span>
+        </button>
+      </form>
+    </nav>
+
+    <nav class="rc-header__nav rc-header__nav--secondary rc-md-up ">
+
+      <ul class="rc-list rc-list--blank rc-list--inline rc-list--align rc-header__center">
+        <li class="rc-list__item">
+          <ul class="rc-list rc-list--blank rc-list--inline rc-list--align rc-header__center">
+            <li class="rc-list__item">
+              <a class="rc-list__header" href="/getting-started/overview/about_design_language.html">Getting Started</a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li class="rc-list__item">
+          <ul class="rc-list rc-list--blank rc-list--inline rc-list--align rc-header__center">
+            <li class="rc-list__item">
+              <a class="rc-list__header" href="/getting-started/support/submit_an_issue.html">Help</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="rc-list__item">
+          <ul class="rc-list rc-list--blank rc-list--inline rc-list--align rc-header__center">
+            <li class="rc-list__item">
+              <a class="rc-list__header" href="/ui-framework/brand_identity/colour.html">UI Framework</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mega Menu -->
+  <div data-js-modal-menu>
+    <header class="rc-modal__header rc-md-up">
+      <button class="rc-modal__close rc-btn rc-btn--icon-label rc-icon rc-close--xs rc-iconography"
+        data-modal-trigger="main-nav-modal">Close</button>
+      <a href="/">
+        <span class="rc-screen-reader-text">Royal Canin Logo</span>
+        <object id="main-logo" data="https://d1a19ys8w1wkc1.cloudfront.net/logo--crown.svg?v=8-7-8" type="image/svg+xml"
+          class="rc-modal__logo" data-js-import-interactive-svg>
+          <img src="https://d1a19ys8w1wkc1.cloudfront.net/1x1.gif?v=8-7-8"
+            style="background-image: url(https://d1a19ys8w1wkc1.cloudfront.net/logo--crown.png?v=8-7-8)" width="150"
+            height="100" alt="Royal Canin logo" />
+        </object>
+      </a>
+    </header>
+    <section class="rc-max-width--xl">
+      <div class="rc-column rc-lg-up rc-padding--lg">
+        <h1 class="rc-gamma rc-padding-x--md">Working together for the ultimate brand experience</h1>
+        <img class="rc-padding--sm" src="./assets/images/Getting-Started.jpg" alt="Royal Canin Design Language" />
+      </div>
+      <nav class="rc-nav rc-hidden" data-toggle-group="mobile" data-toggle-effect="rc-expand--horizontal"
+        data-js-target="mobile-push-nav">
+        <div class="rc-layout-container rc-three-column">
+          <div class="rc-column rc-double-width rc-padding-x--none--mobile rc-padding-right--none">
+            <ul class="rc-list rc-list--blank rc-list--align rc-list--two-column" role="menubar">
+
+
+              <li class="rc-list__item rc-list__item--group">
+                <a href=/getting-started/overview/about_design_language.html class="rc-list__header"
+                  id="mega-nav-header-1" data-toggle="nav-list-1" role="menuitem">Getting Started</a>
+                <ul class="rc-list rc-list--blank rc-list--align" id="nav-list-1" aria-labelledby="mega-nav-menu-1"
+                  role="menu">
+                  <li class="rc-list__item rc-md-down">
+                    <button class="rc-list__link rc-icon rc-left--xs rc-iconography" data-toggle="nav-list-1"
+                      role="button">Back</button>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/getting-started/overview/about_design_language.html"
+                      role="menuitem">Overview</a>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/getting-started/support/submit_an_issue.html"
+                      role="menuitem">Support</a>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/getting-started/usage/boilerplate.html" role="menuitem">Usage</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="rc-list__item rc-list__item--group">
+                <a href=/getting-started/support/submit_an_issue.html class="rc-list__header" id="mega-nav-header-2"
+                  data-toggle="nav-list-2" role="menuitem">Help</a>
+                <ul class="rc-list rc-list--blank rc-list--align" id="nav-list-2" aria-labelledby="mega-nav-menu-2"
+                  role="menu">
+                  <li class="rc-list__item rc-md-down">
+                    <button class="rc-list__link rc-icon rc-left--xs rc-iconography" data-toggle="nav-list-2"
+                      role="button">Back</button>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/getting-started/support/submit_an_issue.html"
+                      role="menuitem">Help</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="rc-list__item rc-list__item--group">
+                <a href=/ui-framework/brand_identity/colour.html class="rc-list__header" id="mega-nav-header-3"
+                  data-toggle="nav-list-3" role="menuitem">Ui Framework</a>
+                <ul class="rc-list rc-list--blank rc-list--align" id="nav-list-3" aria-labelledby="mega-nav-menu-3"
+                  role="menu">
+                  <li class="rc-list__item rc-md-down">
+                    <button class="rc-list__link rc-icon rc-left--xs rc-iconography" data-toggle="nav-list-3"
+                      role="button">Back</button>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/ui-framework/brand_identity/colour.html" role="menuitem">Brand
+                      Identity</a>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/ui-framework/elements/alerts.html" role="menuitem">Elements</a>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/ui-framework/components/accordion.html"
+                      role="menuitem">Components</a>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/ui-framework/layouts/breakpoint_utilities.html"
+                      role="menuitem">Layouts</a>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/ui-framework/templates/starter.html"
+                      role="menuitem">Templates</a>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/ui-framework/visual_styles/block_styles.html"
+                      role="menuitem">Visual Styles</a>
+                  </li>
+                  <li class="rc-list__item">
+                    <a class="rc-list__link ca" href="/ui-framework/documentation/utility_classes.html"
+                      role="menuitem">Documentation</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="rc-column rc-padding-x--none">
+            <ul class="rc-list rc-list--blank rc-list--align rc-btn-offset--top" role="menu">
+              <li class="rc-list__item">
+                <a class="rc-list__link rc-icon rc-email--xs rc-iconography--xs" role="menuitem"
+                  href="/getting-started/support/submit_an_issue.html">Submit an issue</a>
+              </li>
+              <li class="rc-list__item">
+                <a class="rc-list__link rc-icon rc-advice--xs rc-iconography--xs" role="menuitem"
+                  href="mailto:designlanguagesupport@homeagency.co.uk">Contact us</a>
+              </li>
+              <li class="rc-list__item">
+                <a class="rc-list__link rc-icon rc-actions--xs rc-iconography--xs" role="menuitem"
+                  href="/getting-started/usage/resources.html">Downloads</a>
+              </li>
+              <li class="rc-list__item rc-md-down">
+                <a target="_blank" class="rc-btn rc-btn--icon-label rc-flag rc-gb--xs" role="menuitem"
+                  href="https://www.royalcanin.com/uk">United Kingdom</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </div>
+
+  <!-- main -->
+  <main class="rc-content--fixed-header rc-main-content__wrapper ">
+    <section>
+      <div class="rc-layout-container rc-padding--sm rc-bg-colour--brand3 rc-margin-bottom--xs">
+        <span class="rc-select" style="margin-left:5px; width:30px;">
+  <label class="rc-select__label" for="id-multi-select">Date of birth</label>
+  <select data-js-select="" multiple="" data-custom-attr="Custom" data-js-select-placeholder="DD" id="id-multi-select">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+  </select>
+</span>
+<span class="rc-select" style="margin-left:5px; width:30px;">
+  <select data-js-select="" multiple="" data-custom-attr="Custom" data-js-select-placeholder="MM" id="id-multi-select">
+      <option>Janvier</option>
+      <option>Février</option>
+      <option>Mars</option>
+      <option>Avril</option>
+      <option>Mai</option>
+  </select>
+</span>
+<span class="rc-select" style="margin-left:5px; width:30px;">
+  <select data-js-select="" multiple="" data-custom-attr="Custom" data-js-select-placeholder="AAAA" id="id-multi-select">
+      <option>2020</option>
+      <option>2019</option>
+      <option>2018</option>
+      <option>2017</option>
+      <option>2016</option>
+  </select>
+</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="rc-bg-colour--interface-dark" id="footer">
+    <div class="rc-max-width--lg rc-scroll--y">
+      <div class="rc-layout-container rc-four-column rc-md-up">
+        <div class="rc-column rc-triple-width">
+          <nav class="rc-menubar">
+            <ul class="rc-list rc-list--blank rc-list--inverse tes">
+              <li class="rc-list__item ">
+                <a href=/getting-started/overview/about_design_language.html
+                  class="rc-list__link rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-user--xs rc-brand3">Getting
+                  Started</a>
+              </li>
+              <li class="rc-list__item ">
+                <a href=/
+                  class="rc-list__link rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-home--xs rc-brand3">Home</a>
+              </li>
+              <li class="rc-list__item ">
+                <a href=/terms.html
+                  class="rc-list__link rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-user--xs rc-brand3">Terms &
+                  Conditions</a>
+              </li>
+              <li class="rc-list__item ">
+                <a href=/ui-framework/brand_identity/colour.html
+                  class="rc-list__link rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-documents--xs rc-brand3">UI
+                  Framework</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="rc-column rc-text--right">
+          <a class="rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-up--xs rc-brand3 " href='#'
+            role='back to top'>Back to top</a>
+        </div>
+      </div>
+      <div class="rc-divider rc-md-up"></div>
+      <div class="rc-layout-container rc-two-column rc-padding-top--md rc-padding-x--xs">
+        <div class="rc-column">
+          <h1 class="rc-espilon rc-text--inverse">&copy; Royal Canin Design Language: <a class="rc-text--inverse"
+              href="/getting-started/overview/releases.html">v 8.7.8</a></h1>
+          <p class="rc-text--inverse">Working together for the ultimate brand experience.</p>
+        </div>
+      </div>
+      <div class="rc-layout-container rc-two-column">
+        <div class="rc-column rc-padding-x--xs">
+          <button class="rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-mobile--xs rc-brand3 modal__toggle"
+            data-modal-trigger="modal-register">Register For Updates</button>
+        </div>
+        <div class="rc-column rc-text--right rc-padding-x--none"></div>
+      </div>
+      <div class="rc-layout-container rc-one-column rc-md-down">
+        <div class="rc-column rc-padding-x--none">
+          <a class=" rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-user--xs rc-brand3"
+            href="/getting-started/overview/about_design_language.html">Getting Started</a>
+          <a class=" rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-home--xs rc-brand3" href="/">Home</a>
+          <a class=" rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-user--xs rc-brand3" href="/terms.html">Terms &
+            Conditions</a>
+          <a class=" rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-documents--xs rc-brand3"
+            href="/ui-framework/brand_identity/colour.html">UI Framework</a>
+          <a class="rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-up--xs rc-brand3 " href='#'
+            role='back to top'>Back to top</a>
+        </div>
+      </div>
+    </div>
+    <div class="rc-bg-colour--brand4">
+      <div
+        class="rc-max-width--lg rc-layout-container rc-two-column rc-padding-x--xs--desktop rc-padding-x--none--mobile rc-flex-direction--reverse--sm-down">
+        <div class="rc-column rc-double-width rc-padding-x--none">
+          <ol class="rc-list rc-list--align rc-list--blank rc-list--inline rc-text--center--sm-down">
+            <li class="rc-list__item ">
+              <a href=https://www.royalcanin.com/us class="rc-list__link">© Royal Canin SAS 2019</a>
+            </li>
+            <li class="rc-list__item ">
+              <a href=https://www.mars.com/global/policies/privacy/pp-english class="rc-list__link">Privacy</a>
+            </li>
+            <li class="rc-list__item ">
+              <a href=/terms.html class="rc-list__link">Terms</a>
+            </li>
+            <li class="rc-list__item ">
+              <a href=/getting-started/support/submit_an_issue.html class="rc-list__link">Help</a>
+            </li>
+            <li class="rc-list__item ">
+              <a href=/getting-started/usage/resources.html class="rc-list__link">Brand Resources</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <aside role="modal" class="rc-modal rc-hidden" data-modal-target="modal-register">
+    <div class="rc-modal__container">
+      <header class="rc-modal__header">
+        <button class="rc-modal__close rc-btn rc-btn--icon rc-icon rc-close--xs rc-iconography"
+          data-modal-trigger="modal-register"><span class="rc-screen-reader-text">Close</span></button>
+        <object id="main-logo-register" data="https://d1a19ys8w1wkc1.cloudfront.net/logo--crown.svg?v=8-7-8"
+          type="image/svg+xml" class="rc-modal__logo">
+          <img src="https://d1a19ys8w1wkc1.cloudfront.net/1x1.gif?v=8-7-8"
+            style="background-image: url(https://d1a19ys8w1wkc1.cloudfront.net/logo--crown.png?v=8-7-8)" width="150"
+            height="100" alt="Royal Caninn logo" />
+        </object>
+      </header>
+      <section class="rc-modal__content">
+        <h1 class="rc-gamma rc-modal__title">Register for updates</h1>
+        <p>Keep up to date with every new release of Design Language by registering below.</p>
+        <form data-js-subscribe-form class="rc-margin-top--md" id="register">
+          <div class="rc-layout-container rc-two-column rc-padding-top-md">
+            <div class="rc-column rc-padding-x--none--mobile">
+              <span class="rc-input rc-margin-bottom--md--desktop rc-margin-bottom--lg--mobile"
+                data-js-error-message='Please enter your first name' data-js-subscribe-validate=''>
+                <input class="rc-input__control" id="first-name" required='' name='first-name' type='text'>
+                <label class="rc-input__label" for="first-name">
+                  <span class="rc-input__label-text rc-required">First name</span>
+                </label>
+              </span>
+              <span class="rc-input rc-margin-bottom--lg--mobile" data-js-error-message='Please enter your last name'
+                data-js-subscribe-validate=''>
+                <input class="rc-input__control" id="last-name" required='' name='last-name' type='text'>
+                <label class="rc-input__label" for="last-name">
+                  <span class="rc-input__label-text rc-required">Last name</span>
+                </label>
+              </span>
+            </div>
+            <div class="rc-column rc-padding-x--none--mobile rc-margin-bottom--xs--desktop">
+              <span class="rc-select rc-margin-bottom--md--desktop rc-margin-bottom--lg--mobile"
+                data-js-error-message='Please choose your job role' data-js-subscribe-validate=''>
+                <label class="rc-select__label" for="job-role">Job Role</label>
+                <select required='' data-js-select='' id="job-role">
+                  <option value='' disabled='' selected=''>Select an option</option>
+                  <option>Designer</option>
+                  <option>Developer</option>
+                  <option>Tester</option>
+                  <option>Project Manager</option>
+                  <option>Product Owner</option>
+                  <option>Marketeer</option>
+                  <option>Director</option>
+                  <option>Manager</option>
+                  <option>Other</option>
+                </select>
+              </span>
+              <span class="rc-input rc-margin-bottom--lg--mobile" data-js-error-message='Please enter your email'
+                data-js-warning-message='Please enter a valid email' data-js-subscribe-validate=''>
+                <input class="rc-input__control" id="email-address" required='' name='email' type='email'>
+                <label class="rc-input__label" for="email-address">
+                  <span class="rc-input__label-text rc-required">Email address</span>
+                </label>
+              </span>
+            </div>
+          </div>
+          <div class="rc-margin-top--md--desktop rc-input">
+            <button class="rc-btn rc-btn--one" data-js-subscribe-form-submit=''>Register</button> </div>
+          <div data-js-form-message></div>
+        </form>
+      </section>
+    </div>
+  </aside>
+  <section class="rc-full-width rc-padding--xs--desktop rc-bg-colour--brand1 rc-fixed-bottom" style="z-index: 9999;">
+    <div class="rc-layout-container rc-one-column rc-padding--md--mobile">
+      <div class="rc-column rc-padding-y--none--mobile">
+        <div class="rc-text--center rc-text--inverse">
+          You are viewing a Starter Page / Boilerplate Template.
+          <a class="rc-text--inverse" download="" href="/assets/boilerplate.html.zip">Download</a>
+          the template or return to the
+          <a class="rc-text--inverse" href="/ui-framework/brand_identity/colour.html">UI Framework</a>
+          .
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
